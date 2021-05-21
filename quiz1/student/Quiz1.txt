@@ -1,0 +1,18 @@
+<?php include '../config.php'; ?>
+<?php
+//checkAuth('Admin');
+
+
+$qry = "SELECT questions.*,options.* FROM questions  INNER JOIN options ON questions.Question=options.quesID WHERE questions.subjectID='Introduction to programming'";
+
+$results = mysqli_query($con,$qry);
+
+if(!empty($_POST)) 
+{
+	$answers= $_POST['answers'];//$result['option1']
+echo $answers;
+
+	
+}
+
+?>

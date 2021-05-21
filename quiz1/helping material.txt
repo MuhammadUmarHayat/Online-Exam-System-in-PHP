@@ -1,0 +1,6 @@
+
+https://www.w3schools.com/bootstrap4/bootstrap_colors.asp
+https://www.c-sharpcorner.com/UploadFile/051e29/dropdown-list-in-php/
+https://www.tutorialrepublic.com/faq/how-to-populate-dropdown-list-with-array-values-in-php.php
+https://www.plus2net.com/php_tutorial/php_drop_down_list.php
+https://html.form.guide/php-form/php-form-select/

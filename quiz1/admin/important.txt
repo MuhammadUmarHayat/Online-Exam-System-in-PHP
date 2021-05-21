@@ -1,0 +1,22 @@
+ 
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+
+//how to show data into drop down list 
+
+<?php
+	//mysqli_query($con,$q1);
+        include "../config.php";  // Using database connection file here
+        $records = mysqli_query($con, "SELECT name From users where usertype='teacher'");  // Use select query here 
+
+        while($data = mysqli_fetch_array($records))
+        {
+            echo "<option value='". $data['name'] ."'>" .$data['name'] ."</option>";  // displaying data in option menu
+        }	
+    ?>  
+/////////////////////////////////////////////////////////////////////////////////

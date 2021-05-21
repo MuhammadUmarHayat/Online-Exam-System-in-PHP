@@ -1,0 +1,75 @@
+
+    //select all questions of teacher subject
+    Select questions.*, subjects.name as subject from questions 
+        INNER JOIN subjects ON subjects.id = questions.subject_id
+        where teacher_id='" . $user['id'] . "'";
+
+.................
+$qry = "Select questions.*, subjects.name as subject from questions 
+        INNER JOIN subjects ON subjects.id = questions.subject_id
+        where teacher_id='" . $user['id'] . "'";
+$results = mysqli_query($con,$qry);
+.............................................................
+//fetch all mcqs
+SELECT questions.*,options.* FROM questions 
+INNER JOIN options ON questions.Question=options.quesID having questions.subjectID='Introduction to Programming'
+............................................................................................................
+SELECT questions.*,options.* FROM questions 
+INNER JOIN options ON questions.Question=options.quesID having questions.subjectID='Introduction to Programming' LIMIT 2
+
+SELECT `QuesID`, `subjectID`, `Question`, `qType`, `marks`, `options` FROM `questions` 
+WHERE `subjectID='Introduction to Programming' and qType='discriptive' and marks=2
+
+SELECT `QuesID`, `subjectID`, `Question`, `qType`, `marks`, `options` FROM `questions` WHERE 
+subjectID='Introduction To Programming' and qType='discriptive' and marks=2 LIMIT 1
+
+
+SELECT * from  Questions WHERE 
+subjectID='Introduction To Programming' and qType='discriptive' and marks=2 LIMIT 2
+
+
+-------------------------------------------------------------------------------------------------------------
+
+
+mysql_fetch_array() - Fetch a result row as an associative array, a numeric array, or both
+mysql_fetch_assoc() - Fetch a result row as an associative array
+mysql_fetch_object() - Fetch a result row as an object
+mysql_data_seek() - Move internal result pointer
+mysql_fetch_lengths() - Get the length of each output in a result
+mysql_result() - Get result data
+
+https://phppot.com/mysql/mysql-fetch-using-php/
+https://www.plus2net.com/php_tutorial/php_mysql_single-record.php
+http://w3schools.sinsixx.com/php/func_mysql_result.asp.htm
+https://www.youtube.com/watch?v=ptoG63zBKxE
+https://stackoverflow.com/questions/43295265/submit-button-in-while-loop
+https://www.youtube.com/watch?v=h6BDg1m_C38&t=1670s
+
+How to Insert DATE Value into Database in PHP MySQL | PHP Tutorials - 5
+https://www.youtube.com/watch?v=dxHpV2aNeEM
+
+//compare date with current date
+1.way.............
+     date("Y-m-d") <=  $d1;
+
+2. way...............
+$cd= date('Y-m-d');//current date
+ if($cd==$d1)
+ {
+	 
+	echo "equal"; 
+	 
+ }
+............................................................
+MySQL - count total number of rows in php
+https://stackoverflow.com/questions/6655628/mysql-count-total-number-of-rows-in-php
+....................................................................................
+SELECT questions.*,options.* FROM questions  INNER JOIN options ON questions.Question=options.quesID WHERE questions.subjectID='Introduction to programming'
+
+
+ <input type="text" name="SAnswer" class="form-control"><br>
+...............................................
+SELECT * from  Questions WHERE subjectID='Introduction To Programming' and qType='discriptive' and marks=5  LIMIT 1
+
+
+
